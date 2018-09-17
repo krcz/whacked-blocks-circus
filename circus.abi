@@ -1,0 +1,71 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "mp_id",
+				"type": "uint16"
+			}
+		],
+		"name": "get_party_id",
+		"outputs": [
+			{
+				"name": "request_id",
+				"type": "uint16"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"name": "value",
+				"type": "string"
+			},
+			{
+				"name": "request_id",
+				"type": "uint16"
+			}
+		],
+		"name": "reply",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "mp_id",
+				"type": "uint16"
+			},
+			{
+				"indexed": false,
+				"name": "request_id",
+				"type": "uint16"
+			}
+		],
+		"name": "GetPartyRequest",
+		"type": "event"
+	}
+]
